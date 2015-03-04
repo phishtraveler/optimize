@@ -5,12 +5,13 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
  2.  Ran Page Speed Insights to get a starting baseline  28/100 mobile, 30/100 desktop.
  3.  I realized many images were WAY too big, I resized them using photoshop. Images alone upped my PageSpeed score to 76/100 mbl and 89/100 desktop!
  4.  Setup Google Analytics and added my profile ID to index.html as well as the other html instances.
- 5.  Fixed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
-     to Google's recommended font <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
- 6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;
+ 5.  Removed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+     in favor of using inline CSS.
+ 6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 94/100 mbl and 95/100 desktop!
  7.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
  8.  Used Gulp to strip out unnecessary CSS.  See link in resources
  
+
 
 Resources:
 
