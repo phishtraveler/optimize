@@ -10,7 +10,7 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
  6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 94/100 mbl and 95/100 desktop!
  7.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
  8.  Used Gulp to strip out unnecessary CSS.  See link in resources
- 9.  Replaced my resources with Google's optimized resrouces.  This took my Page Spped scroe up to 96/100 mbl and 97/100 desktop.
+ 9.  Replaced my resources with Google's optimized resources. This took my Page Spped score up to 96/100 mbl and 97/100 desktop
  
 
 
