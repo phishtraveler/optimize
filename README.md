@@ -16,11 +16,11 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
 Resources:
 
 Google's Page Speed Insights Link: https://developers.google.com/speed/pagespeed/insights/
-Chrome Plug In:  Installed  https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli?hl=en
+Chrome Plug In Installed: https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli?hl=en
+Render Blocking CSS   https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css
 CSS:  https://css-tricks.com/almanac/
-Un CSS:  https://github.com/giakki/uncss
 Piazza Forums
-Mark and Adarsh's Office Hours
+Mark and Adarsh's Office Hours Google Hangouts
 Udacity Web Performance Optimization course
 
 
