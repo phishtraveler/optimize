@@ -18,6 +18,7 @@ cameron *at* udacity *dot* com
 
 // As you may have realized, this website randomly generates pizzas.
 // Here are arrays of all possible pizza ingredients.
+
 var pizzaIngredients = {};
 pizzaIngredients.meats = [
   "Pepperoni",
@@ -450,12 +451,18 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
-    }
-  }
+     //for loop was too slow
+     var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[1], size); 
+     var newwidth = (document.querySelectorAll(".randomPizzaContainer")[1].offsetWidth + dx) + 'px'; 
+     var pizzacount = document.querySelectorAll(".randomPizzaContainer").length; 
+
+     for (var i = 0; i < pizzacount; i++) { 
+   
+      // changed this from the document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth; 
+      document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth; 
+    } 
+ } 
+
 
   changePizzaSizes(size);
 
@@ -502,9 +509,10 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
+  var scrollTopCalc = document.body.scrollTop;
   var items = document.querySelectorAll('.mover');
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = Math.sin(scrollTopCalc / 1250 + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -537,3 +545,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   updatePositions();
 });
+
+document.addEventListener('DOMContentLoaded', function() {console.log("dom content loaded");});

@@ -1,3 +1,29 @@
+Website Portfolio Optimization Project:
+View my optimized portfolio at http://phishtraveler.github.io/optimize 
+
+ 1.  Setup Github GH-Pages with the portfolio.
+ 2.  Ran Page Speed Insights to get a starting baseline  28/100 mobile, 30/100 desktop.
+ 3.  Setup Google Analytics and added my profile ID to index.html as well as the other html instances.
+ 4.  Fixed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+     to Google's recommended font <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 5.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;
+ 6.  When I realized many images were WAY too big, I resized them using photoshop.
+ 7.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
+ 8.  Used Gulp to strip out unnecessary CSS.  See link in resources
+ 
+
+Resources:
+
+Use Gulp to Un-CSS http://yeoman.io/blog/performance-optimization.html
+CSS:  https://css-tricks.com/almanac/
+Un CSS:  https://github.com/giakki/uncss
+http://www.sitepoint.com/introduction-gulp-js/
+Piazza Forums
+Mark and Adarsh's Office Hours
+Udacity Web Performance Optimization course
+
+Jevon Grimes
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
