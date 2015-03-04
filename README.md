@@ -9,20 +9,20 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
      in favor of using inline CSS.
  6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 94/100 mbl and 95/100 desktop!
  7.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
- 8.  Used Gulp to strip out unnecessary CSS.  See link in resources
- 9.  Replaced my resources with Google's optimized resources. This took my Page Spped score up to 96/100 mbl and 97/100 desktop
+ 8.  Replaced my resources with Google's optimized resources. This took my Page Spped score up to 96/100 mbl and 97/100 desktop
  
 
 
 Resources:
 
-Used Gulp to Un-CSS http://yeoman.io/blog/performance-optimization.html
+Google's Page Speed Insights Link: https://developers.google.com/speed/pagespeed/insights/
+Chrome Plug In:  Installed  https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli?hl=en
 CSS:  https://css-tricks.com/almanac/
 Un CSS:  https://github.com/giakki/uncss
-http://www.sitepoint.com/introduction-gulp-js/
 Piazza Forums
 Mark and Adarsh's Office Hours
 Udacity Web Performance Optimization course
+
 
 Jevon Grimes
 
