@@ -458,7 +458,7 @@ var resizePizzas = function(size) {
 
      for (var i = 0; i < pizzacount; i++) { 
    
-      // changed this from the document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth; 
+      // suggestion from Mark. changed this from the document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth; 
       document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth; 
     } 
  } 
