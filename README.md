@@ -16,7 +16,7 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
 
 Resources:
 
-Use Gulp to Un-CSS http://yeoman.io/blog/performance-optimization.html
+Used Gulp to Un-CSS http://yeoman.io/blog/performance-optimization.html
 CSS:  https://css-tricks.com/almanac/
 Un CSS:  https://github.com/giakki/uncss
 http://www.sitepoint.com/introduction-gulp-js/
