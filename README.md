@@ -7,9 +7,9 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
  4.  Setup Google Analytics and added my profile ID to index.html as well as the other html instances.
  5.  Removed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
      in favor of using inline CSS.
- 6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 94/100 mbl and 95/100 desktop!
+ 6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 92/100 mbl and 93/100 desktop!
  7.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
- 8.  Replaced my resources with Google's optimized resources. This took my Page Spped score up to 96/100 mbl and 97/100 desktop
+ 8.  Replaced my resources with Google's optimized resources. This took my Page Speed score up to 94/100 mbl and 95/100 desktop
  
 
 
