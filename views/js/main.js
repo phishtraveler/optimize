@@ -507,11 +507,11 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
-  var cachedScrollTop = document.body.scrolltop;
+  var cachedScrollTop = document.body.scrolltop / 1250;
+  var items = document.querySelectorAll('.mover');
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((cachedScrollTop / 1250) + (i % 5));
-    // Changed this line with tip from Mark's Office Hours  items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-    items[i].style.transform = "translateX(items[i].basicLeft + 100 * phase + 'px')";
+    var phase = Math.sin(cachedScrollTop + (i % 5));
+    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
