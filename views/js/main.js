@@ -450,14 +450,22 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-      // Decided to move these lines outside of the loop for improved speed   JG
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      var pizzacount = document.querySelectorAll(".randomPizzaContainer").length;
 
-    for (var i = 0l i< pizzacount;i++){
-      //Tip from Mark in Office Hours to use getElementsByClassName instead of querySelectorAll
+    var pizzas = document.querySelectorAll(".randomPizzaContainer"), 
+         i = pizzas.length, 
+         newWidth = pizzas[0].offsetWidth + determineDx(pizzas[0], size) + 'px'; 
+ 
+    while(i--){ 
       document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
+
+      // Decided to move these lines outside of the loop for improved speed   JG
+      //var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+      //var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+      //var pizzacount = document.querySelectorAll(".randomPizzaContainer").length;
+
+    //for (var i = 0l i< pizzacount;i++){
+      //Tip from Mark in Office Hours to use getElementsByClassName instead of querySelectorAll
+      //document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
     }
   }
 
@@ -502,10 +510,11 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
+
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
+  // New variable cachedScrollTop   JG
   var items = document.querySelectorAll('.mover');
   var cachedScrollTop = document.body.scrolltop / 1250;
   var items = document.querySelectorAll('.mover');
