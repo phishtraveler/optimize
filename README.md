@@ -8,8 +8,10 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
  5.  Removed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
      in favor of using inline CSS.
  6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 92/100 mbl and 93/100 desktop!
- 7.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
+ 7.  Fixed the for loop in main.js to modify the loop variables since it was too slow.
+ 8.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
  8.  Replaced my resources with Google's optimized resources. This took my Page Speed score up to 94/100 mbl and 95/100 desktop
+ 9.  Reduced the number of Pizzas from 200 to 36.  Tip from Mark's office hours since not all 2000 are onscreen at once.
  
 
 
