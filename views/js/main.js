@@ -428,7 +428,7 @@ var resizePizzas = function(size) {
     var windowwidth = document.querySelector("#randomPizzas").offsetWidth;
     var oldsize = oldwidth / windowwidth;
 
-    // TODO: change to 3 sizes? no more xl?
+    // 
     // Changes the slider value to a percent width
     function sizeSwitcher (size) {
       switch(size) {
@@ -452,14 +452,14 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
-     //for loop was too slow
+     // The "for loop" was way too slow, so I came up with this "for" instance to modify the loop variables. JG
      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[1], size); 
      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[1].offsetWidth + dx) + 'px'; 
      var pizzacount = document.querySelectorAll(".randomPizzaContainer").length; 
 
      for (var i = 0; i < pizzacount; i++) { 
    
-      // suggestion from Mark. changed this from the document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth; 
+      // suggestion from Mark. changed this from the document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth; JG
       document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth; 
     } 
  } 
@@ -531,10 +531,11 @@ function updatePositions() {
 window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
+// Reduced the unique number of pizzas down from 200 to 36 -JG
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 36; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
