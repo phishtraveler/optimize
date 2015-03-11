@@ -1,17 +1,18 @@
 Website Portfolio Optimization Project:
 View my optimized portfolio at http://phishtraveler.github.io/optimize 
 
- 1.  Setup Github GH-Pages with the portfolio.
- 2.  Ran Page Speed Insights to get a starting baseline  28/100 mobile, 30/100 desktop.
- 3.  I realized many images were WAY too big, I resized them using photoshop. Images alone upped my PageSpeed score to 76/100 mbl and 89/100 desktop!
- 4.  Setup Google Analytics and added my profile ID to index.html as well as the other html instances.
- 5.  Removed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+  1.  Setup Github GH-Pages with the portfolio.
+  2.  Ran Page Speed Insights to get a starting baseline  28/100 mobile, 30/100 desktop.
+  3.  I realized many images were WAY too big, I resized them using photoshop. Images alone upped my PageSpeed score to 76/100 mbl and 89/100 desktop!
+  4.  Setup Google Analytics and added my profile ID to index.html as well as the other html instances.
+  5.  Removed the broken link in index.html from <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
      in favor of using inline CSS.
- 6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 92/100 mbl and 93/100 desktop!
- 7.  Fixed the for loop in main.js to modify the loop variables since it was too slow.
- 8.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
- 8.  Replaced my resources with Google's optimized resources. This took my Page Speed score up to 94/100 mbl and 95/100 desktop
- 9.  Reduced the number of Pizzas from 200 to 36.  Tip from Mark's office hours since not all 2000 are onscreen at once.
+  6.  Inlined my custom CSS into my HTML.  font-family: 'Open Sans', sans-serif;  This took my  PageSpeed score up to 92/100 mbl and 93/100 desktop!
+  7.  Fixed the for loop in main.js to modify the loop variables since it was too slow.
+  8.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
+  8.  Replaced my resources with Google's optimized resources. This took my Page Speed score up to 94/100 mbl and 95/100 desktop
+  9.  Reduced the number of Pizzas from 200 to 36.  Tip from Mark's office hours since not all 2000 are onscreen at once.
+ 10.  Changed every reference of querySelectorAll to getElementsByClassName
  
 
 
