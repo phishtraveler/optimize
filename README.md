@@ -11,8 +11,10 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
   7.  Fixed the for loop in main.js to modify the loop variables since it was too slow.
   8.  Added async to the script <script async src="http://www.google-analytics.com/analytics.js"></script> to not affect CSS rendering.
   8.  Replaced my resources with Google's optimized resources. This took my Page Speed score up to 94/100 mbl and 95/100 desktop
-  9.  Reduced the number of Pizzas from 200 to 36.  Tip from Mark's office hours since not all 2000 are onscreen at once.
- 10.  Changed every reference of querySelectorAll to getElementsByClassName
+  9.  Reduced the number of Pizzas from 200 to 36.  Tip from Mark's office hours since not all 200 are onscreen at once.
+ 10.  Moved a function outside of the loop it was instanced in on main.js
+ 11.  Moved some values outside of the loop for changePizzaSizes in main.js
+
  
 
 
