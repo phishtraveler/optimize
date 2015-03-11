@@ -14,6 +14,9 @@ View my optimized portfolio at http://phishtraveler.github.io/optimize
   9.  Reduced the number of Pizzas from 200 to 36.  Tip from Mark's office hours since not all 200 are onscreen at once.
  10.  Moved a function outside of the loop it was instanced in on main.js
  11.  Moved some values outside of the loop for changePizzaSizes in main.js
+ 12.  Added backface-visibility: hidden to css of .mover for more optimization (tip from office hours)
+ 13.  Changed the document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth; 
+ 	  to a more optimized document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
   
 
 
