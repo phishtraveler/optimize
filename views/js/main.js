@@ -453,10 +453,9 @@ var resizePizzas = function(size) {
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
      // The "for loop" was way too slow, so I came up with this "for" instance to modify the loop variables. JG
-     // Also modified all instances of document.querySelectorAll to getElementsByClassName JG
-     var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[1], size); 
-     var newwidth = (document.getElementsByClassName("randomPizzaContainer")[1].offsetWidth + dx) + 'px'; 
-     var pizzacount = document.getElementsByClassName("randomPizzaContainer").length; 
+     var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[1], size); 
+     var newwidth = (document.querySelectorAll(".randomPizzaContainer")[1].offsetWidth + dx) + 'px'; 
+     var pizzacount = document.querySelectorAll(".randomPizzaContainer").length; 
 
      for (var i = 0; i < pizzacount; i++) { 
    
@@ -533,7 +532,6 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 // Reduced the total number of pizzas down from 200 to 36 -JG
-// Dumped querySelector in favor of getElementsById here - JG
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
