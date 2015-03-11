@@ -421,14 +421,9 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
-  function determineDx (elem, size) {
-    var oldwidth = elem.offsetWidth;
-    var windowwidth = document.querySelector("#randomPizzas").offsetWidth;
-    var oldsize = oldwidth / windowwidth;
-
-    // TODO: change to 3 sizes? no more xl?
+  // TODO: change to 3 sizes? no more xl?
     // Changes the slider value to a percent width
+    // Moved sizeSwitcher function for optimization  -JG
     function sizeSwitcher (size) {
       switch(size) {
         case "1":
@@ -442,12 +437,19 @@ var resizePizzas = function(size) {
       }
     }
 
+  
+  // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
+  // Pulled variables together for iteration  -JG
+  function determineDx (elem, size) {
+    var oldwidth = elem.offsetWidth;
+    var windowwidth = document.querySelector("#randomPizzas").offsetWidth;
+    var oldsize = oldwidth / windowwidth;
     var newsize = sizeSwitcher(size);
     var dx = (newsize - oldsize) * windowwidth;
 
     return dx;
   }
-
+    
   // Iterates through pizza elements on the page and changes their widths
   function changePizzaSizes(size) {
 
@@ -514,6 +516,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
+  
   // New variable cachedScrollTop   JG
   var items = document.querySelectorAll('.mover');
   var cachedScrollTop = document.body.scrolltop / 1250;
