@@ -24,6 +24,7 @@ CSS:  https://css-tricks.com/almanac/
 Piazza Forums
 Mark and Adarsh's Office Hours Google Hangouts
 Udacity Web Performance Optimization course
+Link to Gone in 60 FPS Article:  http://www.smashingmagazine.com/2013/06/10/pinterest-paint-performance-case-study/
 
 
 Jevon Grimes
