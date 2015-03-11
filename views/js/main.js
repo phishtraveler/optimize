@@ -533,6 +533,7 @@ window.addEventListener('scroll', updatePositions);
 
 // Generates the sliding pizzas when the page loads.
 // Reduced the total number of pizzas down from 200 to 36 -JG
+// Dumped querySelector in favor of getElementsById here - JG
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
@@ -544,7 +545,7 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.width = "73.333px";
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
-    document.querySelector("#movingPizzas1").appendChild(elem);
+    document.getElementsById("movingPizzas1").appendChild(elem);
   }
   updatePositions();
 });
